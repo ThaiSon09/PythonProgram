@@ -1,0 +1,41 @@
+﻿<html>
+
+<head>
+<title> Tiêu đề của web vĩ đại </title>
+</head>
+
+<body>
+
+Nội dung của trang web.  <p>
+{{ngaythang}}
+
+<p> Tên các môn học <p>
+{%  for mon in dsmon %}
+
+{{mon}}  <br>
+
+{% endfor %}
+<p> <hr> <p>
+
+<a href="http://tuoitre.vn"> Xem báo Tuổi trẻ </a>
+<p>
+<img width="250px" height="200px" src = "https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg"> </img>
+<p>
+<img width="250px" height="200px" src = "thumuchinh/hinh_cho/concho.jpg" > </img>
+<table>
+
+{% for ketqua in nnlt %}
+
+<tr>
+<td> {{ ketqua.STT }} </td>
+<td> {{ ketqua.ten }} </td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+
+</body>
+
+</html>
